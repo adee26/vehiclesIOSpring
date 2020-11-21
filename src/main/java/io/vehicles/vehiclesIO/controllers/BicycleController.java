@@ -8,10 +8,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/bicycle")
-public class BicycleRepository {
+public class BicycleController {
     private final BicycleService bicycleService;
 
-    public BicycleRepository(BicycleService bicycleService) {
+    public BicycleController(BicycleService bicycleService) {
         this.bicycleService = bicycleService;
     }
 

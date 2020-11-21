@@ -22,7 +22,7 @@ public class MotorcycleController {
 
     @GetMapping
     public List<Motorcycle> findAllMotorcycles(){
-        return motorcycleService.findAll();
+        return motorcycleService.findAll(); 
     }
 
     @GetMapping(value = "/{id}")

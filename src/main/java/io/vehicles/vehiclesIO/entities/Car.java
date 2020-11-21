@@ -10,7 +10,9 @@ import javax.persistence.*;
 @Table(name = "car")
 public class Car extends Vehicle{
     private int topSpeed;
+    @Enumerated(EnumType.STRING)
     private GearType gearType;
+    @Enumerated(EnumType.STRING)
     private CarShape carShape;
 
     public Car() {
