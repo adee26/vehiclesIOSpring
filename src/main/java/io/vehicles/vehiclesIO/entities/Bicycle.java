@@ -1,11 +1,10 @@
 package io.vehicles.vehiclesIO.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "bicycleID")
+@Table(name = "bicycle")
 public class Bicycle extends Vehicle {
     public Bicycle() {
     }

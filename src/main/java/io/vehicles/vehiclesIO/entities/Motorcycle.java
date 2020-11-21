@@ -3,8 +3,12 @@ package io.vehicles.vehiclesIO.entities;
 import io.vehicles.vehiclesIO.enums.MotorcycleShape;
 
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "motorcycleId")
+@Table(name = "motorcycle")
 public class Motorcycle extends Vehicle{
     private String topSpeed;
     private MotorcycleShape motorcycleShape;

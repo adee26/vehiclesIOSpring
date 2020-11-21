@@ -6,6 +6,8 @@ import io.vehicles.vehiclesIO.enums.CarShape;
 import javax.persistence.*;
 
 @Entity
+@PrimaryKeyJoinColumn(name = "carId")
+@Table(name = "car")
 public class Car extends Vehicle{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
