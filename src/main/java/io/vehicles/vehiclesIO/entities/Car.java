@@ -9,8 +9,6 @@ import javax.persistence.*;
 @PrimaryKeyJoinColumn(name = "carId")
 @Table(name = "car")
 public class Car extends Vehicle{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int topSpeed;
     private GearType gearType;
     private CarShape carShape;
@@ -24,7 +22,7 @@ public class Car extends Vehicle{
         this.carShape = carShape;
     }
 
-    public Car(String brand, String model, Integer price, Long id1, int topSpeed, GearType gearType, CarShape carShape) {
+    public Car(String brand, String model, Integer price, int topSpeed, GearType gearType, CarShape carShape) {
         super(brand, model, price);
         this.topSpeed = topSpeed;
         this.gearType = gearType;

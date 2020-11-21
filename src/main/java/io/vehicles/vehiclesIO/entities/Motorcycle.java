@@ -10,28 +10,28 @@ import javax.persistence.Table;
 @PrimaryKeyJoinColumn(name = "motorcycleId")
 @Table(name = "motorcycle")
 public class Motorcycle extends Vehicle{
-    private String topSpeed;
+    private Integer topSpeed;
     private MotorcycleShape motorcycleShape;
 
     public Motorcycle() {
     }
 
-    public Motorcycle(Long id, String topSpeed, MotorcycleShape motorcycleShape) {
+    public Motorcycle(Long id, Integer topSpeed, MotorcycleShape motorcycleShape) {
         this.topSpeed = topSpeed;
         this.motorcycleShape = motorcycleShape;
     }
 
-    public Motorcycle(Long id, String brand, String model, Integer price, Long id1, String topSpeed, MotorcycleShape motorcycleShape) {
+    public Motorcycle(Long id, String brand, String model, Integer price, Long id1, Integer topSpeed, MotorcycleShape motorcycleShape) {
         super(brand, model, price);
         this.topSpeed = topSpeed;
         this.motorcycleShape = motorcycleShape;
     }
 
-    public String getTopSpeed() {
+    public Integer getTopSpeed() {
         return topSpeed;
     }
 
-    public Motorcycle setTopSpeed(String topSpeed) {
+    public Motorcycle setTopSpeed(Integer topSpeed) {
         this.topSpeed = topSpeed;
         return this;
     }
