@@ -10,7 +10,7 @@ public class Bicycle extends Vehicle {
     }
 
 
-    public Bicycle( String brand, String model, Integer price, int bicycleId) {
+    public Bicycle( String brand, String model, Integer price) {
         super( brand, model, price);
     }
 

@@ -11,11 +11,11 @@ public class Boat extends Vehicle{
     public Boat() {
     }
 
-    public Boat( String horsePower) {
-        this.horsePower = horsePower;
-    }
+//    //public Boat( String horsePower) {
+//        this.horsePower = horsePower;
+//    }
 
-    public Boat(String brand, String model, Integer price, Long id1, String horsePower) {
+    public Boat(String brand, String model, Integer price, String horsePower) {
         super(brand, model, price);
         this.horsePower = horsePower;
     }
